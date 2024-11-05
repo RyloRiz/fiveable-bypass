@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "Fiveable Bypass",
+	"description": "A simple extension to bypass Fiveable's paywall",
+	"version": "1.0.0",
+	"icons": {
+		"16": "logo/logo-16.png",
+		"48": "logo/logo-48.png",
+		"128": "logo/logo-128.png"
+	},
+	"permissions": [],
+	"host_permissions": [
+		"*://*/*"
+	],
+	"content_scripts": [{
+		"js": ["foreground.js"],
+		"matches": ["https://library.fiveable.me/*"]
+	}]
+}
